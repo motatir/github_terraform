@@ -35,3 +35,13 @@ temp
 *.key
 *.pem
 *.log
+**/.terraform/*
+.env
+.terraform.lock*
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files
+.idea/*
+*.iml

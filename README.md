@@ -13,7 +13,7 @@ The user must have valid github account.. If not they have to use the below ment
 
 
 ## How to get access to IB repositories and organisation as a normal member
-  First the user must add his or her lan id in the [users.yaml]() below the respective groups and raise a PR...
+  First the user must add his or her lan id in the [users.yaml](https://github.service.anz/css/github-ib/blob/master/users.yaml) below the respective groups and raise a PR...
   
                        | Team name               |      Description                   |
                        |:------------:           |   :--------------------------:     |
@@ -33,9 +33,9 @@ The user must have valid github account.. If not they have to use the below ment
 
   * First you should ask the present admin to add you explicitly in github as an admin 
 
-  * After that you have to add your lan id in the respective teams under [users.yaml]()
+  * After that you have to add your lan id in the respective teams under [users.yaml](https://github.service.anz/css/github-ib/blob/master/users.yaml)
 
-  * Then under [variables.tf]() in 4th line add your lan id in the array and raise a PR
+  * Then under [variables.tf](https://github.service.anz/css/github-ib/blob/master/variables.tf) in 4th line add your lan id in the array and raise a PR
 
 ## How to get admin access if you are already part of some teams:
  
@@ -43,9 +43,9 @@ The user must have valid github account.. If not they have to use the below ment
 
   * After the above PR is merged ask the present admin to add you explicitly in github as an admin
 
-  * After that you have to add your lan id in the respective teams under [users.yaml]()
+  * After that you have to add your lan id in the respective teams under [users.yaml](https://github.service.anz/css/github-ib/blob/master/users.yaml)
 
-  * Then under [variables.tf]() in 4th line add your lan id in the array and raise a PR
+  * Then under [variables.tf](https://github.service.anz/css/github-ib/blob/master/variables.tf) in 4th line add your lan id in the array and raise a PR
 
 
 

@@ -21,7 +21,7 @@ locals {
       name        = "ib-bot"
       privacy     = "closed"
     }
-    ib-developer-pool = {
+    ib-developers = {
       description = "IB Engineers Pool"
       name        = "ib-developers"
       privacy     = "closed"

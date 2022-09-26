@@ -1,7 +1,7 @@
 locals {
   # teams data
   github_ib_teams = {
-    ib-admins-release = {
+    ib-admin-release = {
       description = "Approving the change to master"
       name        = "ib-admin-release"
       privacy     = "closed"
@@ -11,32 +11,32 @@ locals {
       name        = "ib-review-finacle"
       privacy     = "closed"
     }
-    ib-admins = {
+    ib-admin = {
       description = "IB Acceleration Team"
       name        = "ib-admin"
       privacy     = "closed"
     }
-    ib-bots = {
+    ib-bot = {
       description = "Only Service Account for automation"
       name        = "ib-bot"
       privacy     = "closed"
     }
-    ib-developers-pool = {
+    ib-developer-pool = {
       description = "IB Engineers Pool"
       name        = "ib-developers"
       privacy     = "closed"
     }
-    ib-release-leads = {
+    ib-release-lead = {
       description = "IB Release Lead Team"
       name        = "ib-release-lead"
       privacy     = "closed"
     }
-    ib-reviewers-codefresh = {
+    ib-reviewer-codefresh = {
       description = "Reviewing Codefresh changes in IB"
       name        = "ib-reviewer-codefresh"
       privacy     = "closed"
     }
-    ib-reviewers-k8 = {
+    ib-reviewer-k8 = {
       description = "Reviewing K8 Changes in IB"
       name        = "ib-reviewer-k8"
       privacy     = "closed"

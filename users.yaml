@@ -1,5 +1,5 @@
 teams:
-    ib-admins-release:      #Approving the change to master
+    ib-admin-release:      #Approving the change to master
       - raya
       - gentelas
       - adlas
@@ -19,11 +19,11 @@ teams:
       - jaiswav2
       - meganas1
       - soundrap
-    ib-admins:               #IB Acceleration Team
+    ib-admin:               #IB Acceleration Team
       - raya
       - gentelas
-    ib-bots:                 #Only Service Account for automation
-    ib-developers-pool:      #IB Engineers Pool
+    ib-bot:                 #Only Service Account for automation
+    ib-developers:      #IB Engineers Pool
       - roym2
       - josephc3
       - Chethap1
@@ -148,12 +148,12 @@ teams:
       - pothulas
       - arvapals
       - Harikanv
-    ib-release-leads:        #IB Release Lead Team
+    ib-release-lead:        #IB Release Lead Team
       - kalleyn
-    ib-reviewers-codefresh:  #Reviewing Codefresh changes in IB
+    ib-reviewer-codefresh:  #Reviewing Codefresh changes in IB
       - raya
       - adlas
-    ib-reviewers-k8:         #Reviewing K8 Changes in IB
+    ib-reviewer-k8:         #Reviewing K8 Changes in IB
       - raya
       - nannapav
       - gentelas

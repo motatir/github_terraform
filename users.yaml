@@ -22,8 +22,9 @@ teams:
     ib-admin:               #IB Acceleration Team
       - raya
       - gentelas
-    ib-bot:                 #Only Service Account for automation
-    ib-developers:      #IB Engineers Pool
+    ib-bot:
+      - auibscgitpdsa       #Only Service Account for automation
+    ib-developers:          #IB Engineers Pool
       - roym2
       - josephc3
       - Chethap1
@@ -145,14 +146,28 @@ teams:
       - bhartir
       - rollinss
       - guttikoa
+      - patelj22
       - pothulas
+      - ravikumc
+      - shettyk3
       - arvapals
+      - kattav2
+      - settipas
+      - seegavam
       - Harikanv
+      - pechimuv
+      - chellabk
+      - hollan
+      - lonkara
+      - uppale
+      - ramasar2
     ib-release-lead:        #IB Release Lead Team
       - kalleyn
     ib-reviewer-codefresh:  #Reviewing Codefresh changes in IB
       - raya
       - adlas
+      - gentelas
+      - gurappau
     ib-reviewer-k8:         #Reviewing K8 Changes in IB
       - raya
       - nannapav

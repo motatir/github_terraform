@@ -161,6 +161,7 @@ teams:
       - lonkara
       - uppale
       - ramasar2
+      - pokalap
     ib-release-lead:        #IB Release Lead Team
       - kalleyn
     ib-reviewer-codefresh:  #Reviewing Codefresh changes in IB

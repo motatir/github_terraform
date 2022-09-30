@@ -3,7 +3,7 @@ locals {
   github_ib_teams = {
     ib-admin = {
       description  = "Approving the change to master"
-      name         = "ib-admin-release"
+      name         = "ib-admin"
       privacy      = "closed"
       repositories = ["all"]
       permission   = "admin"

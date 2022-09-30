@@ -26,7 +26,7 @@ module "teams" {
 }
 
 module "team_repository" {
-  depends_on = [module.teams]
+  depends_on      = [module.teams]
   source          = "./modules/team_repository"
   for_each        = local.github_ib_teams
   team_id         = module.teams[each.key].teams_id

@@ -1,8 +1,7 @@
 teams:
-    ib-admin-release:      #Approving the change to master
+    ib-admin:      #Approving the change to master
       - raya
       - gentelas
-      - adlas
     ib-review-finacle:     #PR reviewer for Finacle components
       - meenar
       - puthenvs
@@ -19,9 +18,6 @@ teams:
       - jaiswav2
       - meganas1
       - soundrap
-    ib-admin:               #IB Acceleration Team
-      - raya
-      - gentelas
     ib-bot:
       - auibscgitpdsa       #Only Service Account for automation
     ib-developers:          #IB Engineers Pool
@@ -162,8 +158,6 @@ teams:
       - uppale
       - ramasar2
       - pokalap
-    ib-release-lead:        #IB Release Lead Team
-      - kalleyn
     ib-reviewer-codefresh:  #Reviewing Codefresh changes in IB
       - raya
       - adlas

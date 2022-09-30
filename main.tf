@@ -48,4 +48,16 @@ module "org_membership"{
  
 }
 
+module "team_repository" {
+  source          = "./modules/team_repository"
+  for_each        = local.github_ib_teams
+  team_id         = module.teams[each.key].teams_id
+  repositories    = each.value.repositories == ["all"] ? data.github_repositories.repos.names : each.value.repositories
+  team_name       = each.key
+  repo_permission = each.value.permission
+}
 
+
+data "github_repositories" "repos" {
+  query = "org:css archived:no"
+}

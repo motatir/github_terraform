@@ -14,10 +14,9 @@ terraform {
 #  2. name of the organization in owner field
 #  3. base_url if the enterprise github
 provider "github" {
-  base_url = "https://github.service.anz/"
-  owner    = "css"
+  base_url = var.github_url
+  owner    = var.github_org
 }
-
 
 module "teams" {
   source       = "./modules/teams"

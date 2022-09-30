@@ -9,10 +9,10 @@ resource "github_team_membership" "ib_teams_membership" {
 
 
 # This will validate whether member has a github access or not
-data "github_user" "validate_user" { 
+data "github_user" "validate_user" {
   for_each = { for index, lan_id in var.gh_members[*] : lan_id => lan_id }
   username = each.value
-  
+
 }
 
 

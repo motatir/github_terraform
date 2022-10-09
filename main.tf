@@ -44,10 +44,10 @@ module "org_membership" {
 }
 
 module "members" {
-  depends_on = [module.org_membership]
-  source     = "./modules/members"
-  for_each   = tomap(yamldecode(file("./users.yaml"))).teams
-  team_id    = module.teams[each.key].teams_id #injecting team id from teams module to members module
+  depends_on   = [module.org_membership]
+  source       = "./modules/members"
+  for_each     = tomap(yamldecode(file("./users.yaml"))).teams
+  team_id      = module.teams[each.key].teams_id #injecting team id from teams module to members module
   team_members = each.value[*]
 }
 

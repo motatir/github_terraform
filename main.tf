@@ -48,7 +48,7 @@ module "members" {
   source     = "./modules/members"
   for_each   = tomap(yamldecode(file("./users.yaml"))).teams
   team_id    = module.teams[each.key].teams_id #injecting team id from teams module to members module
-  gh_members = each.value[*]
+  team_members = each.value[*]
 }
 
 data "github_repositories" "repos" {

@@ -1,6 +1,6 @@
 # adding users to individual teams 
 resource "github_team_membership" "team_membership" {
-  count    = var.team_members
+  count    = length(var.team_members)
   team_id  = var.team_id
   username = var.team_members[count.index]
 }

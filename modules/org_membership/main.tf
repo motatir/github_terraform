@@ -1,4 +1,4 @@
 resource "github_membership" "membership_for_org" {
-  count    = length(var.org_members)
-  username = var.org_members[count.index]
+    for_each = { for index, lan_id in var.org_members[*] : upper(lan_id) => lan_id }
+    username = each.value
 }

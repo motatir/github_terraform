@@ -32,6 +32,18 @@ module "team_repository" {
   team_name       = each.key
   repo_permission = each.value.permission
 }
+data "github_users" "validate_users" {
+  usernames = compact(distinct(flatten(values(tomap(yamldecode(file("./users.yaml"))).teams))))
+
+  lifecycle {
+    # The AMI ID must refer to an existing AMI that has the tag "nomad-server".
+    postcondition {
+      condition     = length(self.unknown_logins) == 0
+      error_message = "invalid users: ${join(",",self.unknown_logins)}"
+    }
+  }
+}
+
 
 module "org_membership" {
   source      = "./modules/org_membership"
@@ -44,11 +56,11 @@ module "org_membership" {
 }
 
 module "members" {
-  depends_on = [module.org_membership]
-  source     = "./modules/members"
-  for_each   = tomap(yamldecode(file("./users.yaml"))).teams
-  team_id    = module.teams[each.key].teams_id #injecting team id from teams module to members module
-  gh_members = each.value[*]
+  depends_on   = [module.org_membership]
+  source       = "./modules/members"
+  for_each     = tomap(yamldecode(file("./users.yaml"))).teams
+  team_id      = module.teams[each.key].teams_id #injecting team id from teams module to members module
+  team_members = each.value[*]
 }
 
 data "github_repositories" "repos" {

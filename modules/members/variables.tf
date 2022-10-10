@@ -1,4 +1,4 @@
-variable "gh_members" {
+variable "team_members" {
   type        = list(string)
   description = "list of members in the respective team"
 }

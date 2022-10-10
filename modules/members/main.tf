@@ -3,6 +3,7 @@ resource "github_team_membership" "team_membership" {
   for_each = { for index, lan_id in var.team_members[*] : upper(lan_id) => lan_id }
   team_id  = var.team_id
   username = each.value
+  role     = contains(var.admins, each.value) ? "maintainer" : "member"
 }
 
 

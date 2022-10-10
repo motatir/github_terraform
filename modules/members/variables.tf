@@ -7,4 +7,7 @@ variable "team_id" {
   description = "Team id for the respective team"
 }
 
-
+variable "admins" {
+  type        = list(string)
+  description = "Owners of the organisation"
+}

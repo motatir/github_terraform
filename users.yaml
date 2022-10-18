@@ -158,6 +158,7 @@ teams:
       - uppale
       - ramasar2
       - pokalap
+      - kudhbudm
     ib-reviewer-codefresh:  #Reviewing Codefresh changes in IB
       - raya
       - adlas

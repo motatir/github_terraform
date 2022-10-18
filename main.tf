@@ -2,10 +2,10 @@ terraform {
   required_providers {
     github = {
       source  = "integrations/github"
-      version = "~> 5.3.0"
+      version = "~> 5.5.0"
     }
   }
-  required_version = ">= 1.2.9"
+  required_version = ">= 1.3.2"
 }
 
 #required authentications are:-

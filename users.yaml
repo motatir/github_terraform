@@ -27,7 +27,6 @@ teams:
       - annavajr
       - arvapals
       - bajajm1
-      - balasug3
       - balasun4
       - barigids
       - bhartir
@@ -57,7 +56,6 @@ teams:
       - harikanv
       - hollan
       - jaiswav2
-      - janagav1
       - jayaraa4
       - josepha7
       - josephc3
@@ -91,9 +89,7 @@ teams:
       - padhyp1
       - pandea10
       - pants1
-      - patelj22
       - pokalap
-      - pothulas
       - puthenvs
       - rajasev1
       - rajs12
@@ -129,7 +125,6 @@ teams:
       - valluriv
       - vangalab
       - vijayam
-      - wahis1
       - walasanr
     ib-reviewer-codefresh:  #Reviewing Codefresh changes in IB
       - raya

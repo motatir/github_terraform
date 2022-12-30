@@ -42,6 +42,18 @@ data "github_users" "validate_users" {
     }
   }
 }
+data "http" "github_api_suspended_users" {
+  for_each = { for index, lan_id in compact(distinct(flatten(values(tomap(yamldecode(file("./users.yaml"))).teams))))[*] : upper(lan_id) => lan_id }
+  url      = "https://github.service.anz/api/v3/users/${each.value}"
+  # method = "HEAD"
+  lifecycle {
+    postcondition {
+      condition     = jsondecode(self.response_body).suspended_at == null
+      error_message = "${each.value} is suspended user"
+    }
+  }
+
+}
 
 
 module "org_membership" {
